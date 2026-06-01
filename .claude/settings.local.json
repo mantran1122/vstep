@@ -1,0 +1,14 @@
+{
+  "model": "claude-opus-4-7",
+  "effortLevel": "medium",
+  "permissions": {
+    "allow": [
+      "mcp__chrome-devtools-mcp__list_pages",
+      "mcp__chrome-devtools-mcp__navigate_page",
+      "mcp__chrome-devtools-mcp__take_screenshot",
+      "mcp__chrome-devtools-mcp__evaluate_script",
+      "mcp__chrome-devtools-mcp__new_page",
+      "mcp__chrome-devtools-mcp__list_console_messages"
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+/* ── HomeInterviewSection – 3D Cube Scroll ── */
+
+.vstep-cube-section {
+  position: relative;
+  height: 420vh;           /* 4 items × ~105vh scroll range */
+  background: #f5f1e8;
+  z-index: 4;
+}
+
+.vstep-cube-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.vstep-cube-inner {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5vw, 80px);
+  display: grid;
+  grid-template-columns: 0.85fr 1.05fr 0.9fr;
+  align-items: center;
+  gap: clamp(32px, 5vw, 80px);
+}
+
+/* ── Heading col ── */
+.vstep-cube-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #005c8a;
+  margin-bottom: 24px;
+}
+
+.vstep-cube-heading h2 {
+  font-size: clamp(32px, 4.2vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #111;
+  font-weight: 800;
+}
+
+.vstep-cube-heading h2 span {
+  color: #005c8a;
+}
+
+.vstep-cube-desc {
+  margin-top: 32px;
+  max-width: 420px;
+  color: #4f5f63;
+  font-size: 15px;
+  line-height: 2;
+}
+
+/* ── Visual (cube) col ── */
+.vstep-cube-visual {
+  position: relative;
+  height: clamp(320px, 42vw, 620px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vstep-cube-camera {
+  width: clamp(280px, 40vw, 620px);
+  height: clamp(280px, 40vw, 620px);
+  perspective: 1400px;
+}
+
+.vstep-cube-object {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 950ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 4 faces: 90° apart, translateZ = half edge = same as camera width/2 */
+.vstep-cube-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #cdd6db;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+}
+
+.vstep-cube-face img {
+  object-fit: cover;
+  transform: scale(1.04);
+}
+
+/* ── List col ── */
+.vstep-cube-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.vstep-cube-list li {
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  opacity: 0.38;
+  transform: translateX(16px);
+  transition:
+    opacity 480ms ease,
+    transform 480ms ease,
+    border-color 480ms ease;
+}
+
+.vstep-cube-list li.is-active {
+  opacity: 1;
+  transform: translateX(0);
+  border-color: #005c8a;
+}
+
+.vstep-cube-list a {
+  display: block;
+  padding: 20px 0 22px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* card top row */
+.vstep-cube-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.vstep-cube-card-top > .vstep-num {
+  font-size: 12px;
+  font-weight: 800;
+  color: #005c8a;
+  padding-top: 3px;
+}
+
+.vstep-cube-card-top p {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1;
+  color: #111;
+}
+
+.vstep-cube-card-top small {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  color: #667579;
+}
+
+/* card title */
+.vstep-cube-list h3 {
+  margin: 0;
+  font-size: clamp(22px, 2.8vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: #111;
+}
+
+.vstep-cube-list h3 span {
+  display: block;
+}
+
+/* view more */
+.vstep-cube-more {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #005c8a;
+}
+
+.vstep-cube-more span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: #005c8a;
+  color: #fff;
+  transition: transform 280ms ease;
+}
+
+.vstep-cube-list li.is-active .vstep-cube-more span {
+  transform: translateX(4px);
+}
+
+/* ── Progress dots ── */
+.vstep-cube-dots {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.vstep-cube-dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(0, 92, 138, 0.22);
+  transition: background 400ms ease, width 400ms ease;
+}
+
+.vstep-cube-dots span.is-active {
+  width: 24px;
+  background: #005c8a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .vstep-cube-section {
+    height: auto;
+  }
+
+  .vstep-cube-sticky {
+    position: relative;
+    height: auto;
+    padding: 80px 0 100px;
+  }
+
+  .vstep-cube-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vstep-cube-visual {
+    order: 2;
+    height: auto;
+  }
+
+  .vstep-cube-list {
+    order: 3;
+  }
+
+  /* On mobile: disable 3D, show faces as stacked slides */
+  .vstep-cube-camera {
+    width: min(84vw, 480px);
+    height: min(84vw, 480px);
+  }
+
+  .vstep-cube-object {
+    transform: none !important;
+    transform-style: flat;
+  }
+
+  .vstep-cube-face {
+    transform: none !important;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    border-radius: 20px;
+  }
+
+  .vstep-cube-face.is-active-face {
+    opacity: 1;
+  }
+
+  .vstep-cube-list li {
+    transform: none;
+  }
+
+  .vstep-cube-dots {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vstep-cube-object {
+    transition: none;
+  }
+}

@@ -1,0 +1,91 @@
+/* Scoped styles for /test-interview only.
+ * Tailwind v4 @theme block adds tokens used by the imported components.
+ * To remove this experiment: delete the entire app/test-interview/ folder. */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..500&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap");
+
+@theme {
+  --color-cream: #f6f2ea;
+  --color-cream-2: #fbf8f2;
+  --color-ink: #20302a;
+  --color-ink-soft: #5b6660;
+  --color-accent: #c9603f;
+  --color-amber: #e0a458;
+
+  --font-display: "Lora", Georgia, serif;
+
+  --shadow-soft: 0 10px 30px -12px rgba(32, 48, 42, 0.15);
+  --shadow-lift: 0 30px 60px -20px rgba(32, 48, 42, 0.28);
+
+  --radius-4xl: 2rem;
+}
+
+/* The test page is rendered as a fixed full-screen overlay so it visually
+ * replaces the project's Navbar/Footer (which still mount via the root layout
+ * but get hidden underneath). z-index sits above the project's .navbar (200). */
+.test-interview-root {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  z-index: 1000;
+  font-family: "Be Vietnam Pro", system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* ---- Soft drifting blobs (hero background) ---- */
+.test-interview-root .blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.5;
+}
+.test-interview-root .blob-1 {
+  top: -6rem;
+  left: -4rem;
+  width: 26rem;
+  height: 26rem;
+  background: rgba(201, 96, 63, 0.28);
+  animation: ti-drift 18s ease-in-out infinite;
+}
+.test-interview-root .blob-2 {
+  top: 4rem;
+  right: -6rem;
+  width: 30rem;
+  height: 30rem;
+  background: rgba(224, 164, 88, 0.25);
+  animation: ti-drift 22s ease-in-out infinite reverse;
+}
+.test-interview-root .blob-3 {
+  bottom: -8rem;
+  left: 30%;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(32, 48, 42, 0.12);
+  animation: ti-drift 26s ease-in-out infinite;
+}
+
+@keyframes ti-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -30px) scale(1.08); }
+}
+
+/* ---- Hero floating images ---- */
+.test-interview-root .float-soft { animation: ti-float 7s ease-in-out infinite; }
+.test-interview-root .float-soft:nth-child(2) { animation-delay: 0.8s; }
+.test-interview-root .float-soft:nth-child(3) { animation-delay: 1.6s; }
+.test-interview-root .float-soft:nth-child(4) { animation-delay: 2.4s; }
+@keyframes ti-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---- Grain overlay ---- */
+.test-interview-root .bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .test-interview-root .blob,
+  .test-interview-root .float-soft { animation: none; }
+}

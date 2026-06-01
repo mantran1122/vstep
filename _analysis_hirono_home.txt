@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3Y6K1KT90"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G3Y6K1KT90');
+</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="image/x-icon" rel="icon" href="https://hirono-iwc.co.jp/recruit/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" href="https://hirono-iwc.co.jp/recruit/apple-touch-icon.png" sizes="360x360">
+  <meta name="format-detection" content="telephone=no">
+  <title>採用サイト | 株式会社 廣野鐵工所</title>
+  <meta name="description" content="廣野鐵工所の採用サイトです。確かな技術力で製造現場を支える人材を募集しています。機械加工・板金・組立などの業務を通じ、着実にスキルを習得。働きやすい勤務制度と充実した福利厚生を整え、長く活躍できる環境を提供しています。">  <meta property="og:image" content="https://hirono-iwc.co.jp/recruit/ogp.png" />
+  <!-- css preload -->
+  <link rel="preload" href="/recruit/assets/css/style.css" as="style">
+  <!-- css -->
+  <link rel="stylesheet" href="/recruit/assets/css/swiper.css" type="text/css" media="all"/>
+  <link href="/recruit/assets/css/style.css" rel="stylesheet">
+  <!-- js -->
+  <script  src="/recruit/assets/js/main.js" defer></script>
+  <!--  -->
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="is-initial">
+  <header class="l-header">
+    <a href="/recruit/" class="l-header-logo">
+      <img src="/recruit/assets/images/logo-primary.webp" alt="廣野鐵工所 採用サイト">
+    </a>
+    <nav class="nav-global" aria-label="メインナビゲーション">
+    <div class="button-hamburger-wrapper">
+      <p><a class="l-header__entry-button" href="/recruit/requirements/">ENTRY</a></p>
+      <button type="button" class="button button-hamburger js-drawer drawer-trigger">
+        <span class="visually-hidden">メニュー</span>
+        <span class="button-hamburger--line" data-line="01"></span>
+        <span class="button-hamburger--line" data-line="02"></span>
+        <span class="button-hamburger--line" data-line="03"></span>
+      </button>
+    </div>
+  <div data-drawer  >
+    <div class="c-decorate-noise-type02"></div>
+    <div class="drawer" data-drawer-body>
+      <div class="drawer__contents">
+        <div class="drawer__contents-inner">
+          <div class="l-header-drawerbody">
+            <div class="l-header-drawer__logo-wrap">
+              <p class="l-header-drawer__logo">
+                <a href="/recruit/"  class="l-header-drawer__logo-link">
+                  <img src="/recruit/assets/images/logo-primary.webp" alt="廣野鐵工所 採用サイト">
+                </a>
+              </p>
+              <p class="l-header-drawer__logo-txt">
+                <a href="https://hirono-iwc.co.jp/" target="_blank" rel="noopener noreferrer">コーポレートサイト</a>
+              </p>
+            </div>
+            <div class="l-header-drawer__nav-wrap">
+              <nav class="l-header-drawer__nav" aria-label="サイト内メニュー">
+                  <ul class="l-header-drawer__nav-list">
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/">
+                        <span class="l-header-drawer__nav-list-item--sm">TOP</span>
+                        <span class="l-header-drawer__nav-list-item--md">トップページ</span>
+                      </a>
+                    </li>
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/strengths/">
+                        <span class="l-header-drawer__nav-list-item--sm">STRENGTH</span>
+                        <span class="l-header-drawer__nav-list-item--md">廣野鐵工所の強み</span>
+                      </a>
+                    </li>
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/business/">
+                        <span class="l-header-drawer__nav-list-item--sm">OUR BUSINESS</span>
+                        <span class="l-header-drawer__nav-list-item--md">職種紹介・製造工程</span>
+                      </a>
+                    </li>
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/crosstalk/">
+                        <span class="l-header-drawer__nav-list-item--sm">FUTURE VISION</span>
+                        <span class="l-header-drawer__nav-list-item--md">未来を語るクロストーク</span>
+                      </a>
+                    </li>
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/interview/">
+                        <span  class="l-header-drawer__nav-list-item--sm">INTERVIEW</span>
+                        <span  class="l-header-drawer__nav-list-item--md">働く人の声を聞く</span>
+                      </a>
+                    </li>
+                      <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/welfare/">
+                        <span  class="l-header-drawer__nav-list-item--sm">WELFARE</span>
+                        <span  class="l-header-drawer__nav-list-item--md">教育制度・福利厚生</span>
+                      </a>
+                    </li>
+                   <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/facilities/">
+                        <span  class="l-header-drawer__nav-list-item--sm">FACILITIES</span>
+                        <span  class="l-header-drawer__nav-list-item--md">働く環境</span>
+                      </a>
+                    </li>
+                    <li class="l-header-drawer__nav-list-item">
+                      <a href="/recruit/contribution/">
+                        <span class="l-header-drawer__nav-list-item--sm">CONTRIBUTION</span>
+                        <span class="l-header-drawer__nav-list-item--md">地域貢献</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              <div class="l-footer__cta-btn">
+                <span class="l-footer__cta-bg"></span>
+                  <a href="/recruit/requirements/" class="l-footer__cta l-footer__cta--drawer" bg-color="cl-dark">
+                    <span class="l-footer__cta-inner">
+                      <p class="l-footer-cta__en">ENTRY</p>
+                      <span class="c-box --header l-footer-cta__copy-box" arrow-color="cl-dark"><svg><use href="#svg-arrow" /></svg><svg><use href="#svg-arrow" /></svg></span>
+                    </span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+  <main class="p-top">
+    <div class="l-hero">
+        <div class="l-hero__slider">
+          <p class="l-hero__slider-title--copyRight">COPYRIGHT (C) HIRONO IRON WORKS CO.,LTD. ALL RIGHTS RESERVED</p>
+          <div class="swiper c-slider__wrapper js-hero__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide l-hero__slider-item" style="--bg-color:#4EAEBF">
+                 <div class="l-hero__slider-item-wrap">
+                   <div class="l-hero__slider-img">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img01.webp" alt="">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img01-back.webp" alt="">
+                    </div>
+                    <div class="l-hero__slider-title-wrap">
+                    <div class="l-hero__slider-title">
+                     <span class="l-hero__slider-title--sm">仕事を楽しむ</span>
+                      <p class="l-hero__slider-title--lg">
+                        <span class="u-block">ENJOY</span>
+                        <span class="u-block sp">YOUR</span>
+                        <span class="u-block sp">WORK</span>
+                      </p>
+                    </div>
+                    <p class="l-hero__slider-title--copy">楽しむ人にやさしい会社。</p>
+                    <p class="l-hero__slider-title--en">HIRONO IRON WORKS RECRUIT SITE</p>
+                    </div>
+                 </div>
+              </div>
+              <!-- l-hero__slider-item -->
+              <div class="swiper-slide l-hero__slider-item" style="--bg-color:#E43936">
+                 <div class="l-hero__slider-item-wrap">
+                   <div class="l-hero__slider-img l-hero__slider-img--type02">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img02.webp" alt="">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img02-back.webp" alt="">
+                    </div>
+                    <div class="l-hero__slider-title-wrap">
+                    <div class="l-hero__slider-title">
+                     <span class="l-hero__slider-title--sm">挑戦を楽しむ</span>
+                      <p class="l-hero__slider-title--lg">
+                        <span class="u-block">ENJOY</span>
+                        <span class="u-block sp">YOUR</span>
+                        <span class="u-block sp">TRIAL</span>
+                      </p>
+                    </div>
+                    <p class="l-hero__slider-title--copy">楽しむ人にやさしい会社。</p>
+                    <p class="l-hero__slider-title--en">HIRONO IRON WORKS RECRUIT SITE</p>
+                    </div>
+                 </div>
+              </div>
+              <!-- l-hero__slider-item -->
+              <div class="swiper-slide l-hero__slider-item" style="--bg-color:#F6B000">
+                 <div class="l-hero__slider-item-wrap">
+                   <div class="l-hero__slider-img  l-hero__slider-img--type03">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img03.webp" alt="">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img03-back.webp" alt="">
+                    </div>
+                    <div class="l-hero__slider-title-wrap">
+                    <div class="l-hero__slider-title">
+                     <span class="l-hero__slider-title--sm">成長を楽しむ</span>
+                      <p class="l-hero__slider-title--lg">
+                        <span class="u-block">ENJOY</span>
+                        <span class="u-block sp">YOUR</span>
+                        <span class="u-block sp">GROWTH</span>
+                      </p>
+                    </div>
+                    <p class="l-hero__slider-title--copy">楽しむ人にやさしい会社。</p>
+                    <p class="l-hero__slider-title--en">HIRONO IRON WORKS RECRUIT SITE</p>
+                    </div>
+                 </div>
+              </div>
+              <!-- l-hero__slider-item -->
+              <div class="swiper-slide l-hero__slider-item" style="--bg-color:#00A44D">
+                 <div class="l-hero__slider-item-wrap">
+                   <div class="l-hero__slider-img l-hero__slider-img--type04--01">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img04.webp" alt="">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img04-back.webp" alt="">
+                  </div>
+                  <div class="l-hero__slider-img l-hero__slider-img--type04--02">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img04.webp" alt="">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img04-back.webp" alt="">
+                  </div>
+                    <div class="l-hero__slider-title-wrap">
+                    <div class="l-hero__slider-title">
+                     <span class="l-hero__slider-title--sm">学びを楽しむ</span>
+                      <p class="l-hero__slider-title--lg">
+                        <span class="u-block">ENJOY</span>
+                        <span class="u-block sp">YOUR</span>
+                        <span class="u-block sp">LEARN</span>
+                      </p>
+                    </div>
+                    <p class="l-hero__slider-title--copy">楽しむ人にやさしい会社。</p>
+                    <p class="l-hero__slider-title--en">HIRONO IRON WORKS RECRUIT SITE</p>
+
+                    </div>
+                 </div>
+              </div>
+              <!-- l-hero__slider-item -->
+              <div class="swiper-slide l-hero__slider-item" style="--bg-color:#F46F2C">
+                 <div class="l-hero__slider-item-wrap">
+                   <div class="l-hero__slider-img l-hero__slider-img--type05">
+                    <picture>
+                      <source srcset="/recruit/assets/images/hero-slider-img05-sp.webp" media="(max-width: 767px)">
+                      <img class="l-hero__slider-img--front" src="/recruit/assets/images/hero-slider-img05.webp" alt="">
+                    </picture>
+                    <picture>
+                      <source srcset="/recruit/assets/images/hero-slider-img05-back-sp.webp" media="(max-width: 767px)">
+                      <img class="l-hero__slider-img--back" src="/recruit/assets/images/hero-slider-img05-back.webp" alt="">
+                    </picture>
+
+                    </div>
+                    <div class="l-hero__slider-title-wrap">
+                    <div class="l-hero__slider-title">
+                     <span class="l-hero__slider-title--sm">人生を楽しむ</span>
+                      <p class="l-hero__slider-title--lg">
+                        <span class="u-block">ENJOY</span>
+                        <span class="u-block sp">YOUR</span>
+                        <span class="u-block sp">LIFE</span>
+                      </p>
+                    </div>
+                    <p class="l-hero__slider-title--copy">楽しむ人にやさしい会社。</p>
+                    <p class="l-hero__slider-title--en">HIRONO IRON WORKS RECRUIT SITE</p>
+                    </div>
+                 </div>
+              </div>
+              <!-- l-hero__slider-item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </div>
+    <div class="p-home-intro__body">
+      <div class="p-home-intro" data-home-intro>
+        <div class="p-home-intro-circle-wrap">
+          <svg class="p-home-intro-circle" data-home-circle viewBox="0 0 4000 4000" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="noise-pattern" patternUnits="userSpaceOnUse" width="1024" height="1024">
+                <image href="/recruit/assets/images/noise-texture-opacity30.webp" width="1024" height="1024"/>
+              </pattern>
+            </defs>
+            <circle cx="2000" cy="2000" r="2000" fill="#FFFFF9"/>
+            <circle cx="2000" cy="2000" r="2000" fill="url(#noise-pattern)"/>
+          </svg>
+        </div>
+        <div class="p-home-intro__content" data-home-pin>
+          <div class="p-home-intro__sticky-item">
+            <div class="p-home-intro__sticky-height">
+              <hgroup class="p-home-intro__title">
+                <p class="p-home-intro__title--en">ENJOY<br />YOUR WORK</p>
+                <h2 class="p-home-intro__title--ja">
+                  楽しむ人に<br>やさしい会社
+                </h2>
+              </hgroup>
+              <div class="p-home-intro__txt-wrap">
+                <p class="p-home-intro__txt">
+                  廣野鐵工所は、楽しむ
+                  <span class="p-home-intro__txt-icon-wrap  p-home-intro__txt-icon--01">
+                    <img class="p-home-intro__txt-icon" src="/recruit/assets/images/home-intro-text-icon01.webp" alt="">
+                  </span>
+                    ことを<br class="u-wbr sp">大切にしています。<br class="">楽しむという前向きな姿勢が、<br class="u-wbr sp">豊かな時間をつくると思うから。<br>仕事はもちろん、<br class="u-wbr sp">先を見据えた挑戦も <span class="p-home-intro__txt-icon-wrap  p-home-intro__txt-icon--02">
+                    <img class="p-home-intro__txt-icon" src="/recruit/assets/images/home-intro-text-icon02.webp" alt="">
+                  </span>、
+                   <br class="">
+                   <span class="p-home-intro__txt-icon-wrap  p-home-intro__txt-icon--03">
+                    <img class="p-home-intro__txt-icon" src="/recruit/assets/images/home-intro-text-icon03.webp" alt="">
+                  </span>リフレッシュの時間も<br class="u-wbr sp">楽しめるように。<br>私たちは、あなたが自分らしく、<br class="u-wbr sp">楽しく成長<span class="p-home-intro__txt-icon-wrap  p-home-intro__txt-icon--04">
+                    <img class="p-home-intro__txt-icon" src="/recruit/assets/images/home-intro-text-icon04.webp" alt="">
+                  </span>するための<br class="">快適な環境<span class="p-home-intro__txt-icon-wrap  p-home-intro__txt-icon--05">
+                    <img class="p-home-intro__txt-icon" src="/recruit/assets/images/home-intro-text-icon05.webp" alt="">
+                  </span>を<br class="u-wbr sp">提供したいと思っています。
+                </p>
+                            <div class="p-home-vision__btn">
+                <a href="/recruit/strengths/" class="c-button" bg-color="cl-yellow">
+                  <div class="c-button__bg"></div>
+                  <div class="c-button__bark">
+                    <p>廣野鐵工所の強み​<svg><use href="#svg-arrow" /></svg></p>
+                  </div>
+                </a>
+                           </div>
+              </div>
+            </div>
+          </div>
+           <div class="p-home-intro__figure-wrapper">
+             <img class="p-home-intro__figure p-home-intro__figure--blue" src="/recruit/assets/images/home-intro-figure01.webp" alt="">
+             <img class="p-home-intro__figure p-home-intro__figure--orange" src="/recruit/assets/images/home-intro-figure02.webp" alt="">
+             <img class="p-home-intro__figure p-home-intro__figure--red" src="/recruit/assets/images/home-intro-figure03.webp" alt="">
+              <img class="p-home-intro__figure p-home-intro__figure--green" src="/recruit/assets/images/home-intro-figure04.webp" alt="">
+           </div>
+          <!-- <img class="p-home-intro__figure p-home-intro__figure--yellow" src="/recruit/assets/images/home-intro-figure05.webp" alt=""> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="p-home-business-wrap">
+      <div class="p-home-business">
+        <div class="p-home-business__bg">
+        </div>
+        <div class="p-home-business__bg-inner">
+        </div>
+          <div class="p-home-business__body">
+                <div class="p-home-business__inner">
+                <div class="p-home-business__inner-text">
+                    <hgroup class="c-heading">
+                      <p class="c-heading--en">
+                      <span class="c-heading-line c-heading-line--first">OUR</span><br aria-hidden="true">
+                      <span class="c-heading-line">BUSINESS</span>
+                    </p>
+                    <h2 class="c-heading--ja">
+                      多彩な職種で、<br aria-hidden="true">ものづくりの未来を<br  aria-hidden="true">支える。
+                    </h2>
+                    </hgroup>
+                      <p class="p-home-business__txt">廣野鐵工所のものづくりは、様々な専門の力が支えています。
+                      金属を形づくる製造部門、現場を支える技術開発部門、
+                      品質を守る品質保証部門、全体を統率する生産管理部門、
+                      そして関東エリアを支える新拠点・宇都宮工場。
+                      それぞれの力がつながり、確かな品質と未来のものづくりを
+                      生み出しています。
+                      </p>
+                    <div class="">
+                      <a href="/recruit/business/" class="c-button" bg-color="cl-green">
+                        <div class="c-button__bg"></div>
+                        <div class="c-button__bark">
+                          <p>職種紹介・製造工程​<svg><use href="#svg-arrow" /></svg></p>
+                        </div>
+                      </a>
+                    </div>
+              </div>
+              <div class="p-home-business__gallary-wrap">
+                <div class="p-home-business__gallary">
+                  <img class="p-home-business__gallary-img--01" src="/recruit/assets/images/home-business-img01.webp" alt="">
+                  <img class="p-home-business__gallary-img--02" src="/recruit/assets/images/home-business-img02.webp" alt="">
+                  <img class="p-home-business__gallary-img--03" src="/recruit/assets/images/home-business-img03.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    </div>
+<div class="p-home-vision-interview">
+  <section class="p-home-vision">
+      <div class="p-home-business__border">
+      </div>
+          <div class="p-home-vision-bg">
+            <div class="p-home-vision__body">
+              <hgroup class="c-heading">
+                  <p class="c-heading--en">
+                  <span class="c-heading-line c-heading-line--first">FUTURE</span><br aria-hidden="true">
+                  <span class="c-heading-line">VISION</span>
+                </p>
+                <h2 class="c-heading--ja">
+                 廣野には技術力と<br class="u-wbr sp" aria-hidden="true">人間力、<br aria-hidden="true">
+                 その両方を<br aria-hidden="true">
+                育む環境がある。
+                </h2>
+              </hgroup>
+            <p class="p-home-vision__txt">技術と人を大切にする廣野。<br aria-hidden="true">その環境の中で成長した次代の経営を担う兄弟が、<br aria-hidden="true">未来への想いを語ります。</p>
+            <div class="p-home-vision__btn">
+              <a href="/recruit/crosstalk/" class="c-button" bg-color="cl-orange">
+                <div class="c-button__bg"></div>
+                <div class="c-button__bark">
+                  <p>クロストーク​<svg><use href="#svg-arrow" /></svg></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
+  </section>
+   <section class="p-home-interview">
+      <div class="c-decorate-noise c-decorate-noise--contain"></div>
+    <div class="p-home-interview__inner">
+      <img class="p-home-interview-decorate-01" src="/recruit/assets/images/home-interview-decorate-01.webp" alt="">
+      <img class="p-home-interview-decorate-02" src="/recruit/assets/images/home-interview-decorate-02.webp" alt="">
+          <div class="c-wrapper">
+            <hgroup class="c-heading" data-color="cl-green">
+                <p class="c-heading--en" >
+                <span class="c-heading-line c-heading-line--white">INTERVIEW</span>
+              </p>
+              <h2 class="c-heading--ja" data-color="cl-white">
+                働く人の声を聞く
+              </h2>
+            </hgroup>
+            <p class="p-home-interview__txt">
+              世界へ届く技術、人を大切にする企業風土、自分の成長。<br aria-hidden="true">
+                若手社員3人が、それぞれの声で語ります。
+              </p>
+    <div class="p-home-interview__img">
+      <article class="p-home-interview__img-item" data-hover>
+        <a href="/recruit/interview/member01/" class="p-home-interview__img-item-link">
+          <div class="p-home-interview__img-item-svg">
+            <svg class="" width="387" height="380" viewBox="0 0 387 380" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0_1850_127" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="384" height="376">
+              <path d="M237.821 27.293L317.454 27.293V76.2676H384.981V129.035H385.014V201.859H385.017V306.571H384.376L316.89 378H72.8115L2.49121 306.571H2L2 201.859H2.07031L2.07031 137.725H77.5586L77.5586 27.293L157.186 27.293V2L237.821 2V27.293Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_1850_127)">
+              <rect x="-29.5977" y="-52.1465" width="103.7" height="434.453" fill="#ADDBEA"/>
+              <rect x="-6.71094" y="-41.8535" width="430.232" height="430.232" fill="url(#pattern0_1850_127)"/>
+              </g>
+              <defs>
+              <pattern id="pattern0_1850_127" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_1850_111" transform="scale(0.00147059)"/>
+              </pattern>
+              <image class="p-home-interview__img-mask" id="image0_1850_111" width="680" height="680" style="transform-origin: 340px 340px;" preserveAspectRatio="none" xlink:href="/recruit/assets/images/home-interview-01.webp"/>
+              </defs>
+            </svg>
+            <img class="p-home-interview__img-bg p-home-interview__img-bg--01" src="/recruit/assets/images/home-interview-bg-01.webp" alt="">
+          </div>
+          <div class="p-home-interview__content">
+            <hgroup class="p-home-interview__title">
+              <p class="p-home-interview__title--sm">INTERVIEW 01</p>
+              <h3 class="p-home-interview__title--md">
+                私たちがつくった部品が、<br aria-hidden="true">
+                世界で活躍する<br aria-hidden="true">
+                農耕機を支えている。
+              </h3>
+            </hgroup>
+            <p class="p-home-interview__status">
+              製造部　<span class="p-home-interview__status--name">Y.M.</span>（2017年入社）
+              <span class="p-home-interview__status-arrow" aria-hidden="true">
+                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.29189 9.9416L10.6832 5.83181H0V4.8365H10.6832L6.29189 0.725063L6.97312 0L12.6667 5.33416L6.97312 10.6667L6.29189 9.9416Z" fill="#00A44D"/>
+                </svg>
+              </span>
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="p-home-interview__img-item" data-hover>
+         <a href="/recruit/interview/member02/" class="p-home-interview__img-item-link">
+           <div class="p-home-interview__img-item-svg">
+          <svg width="395" height="357" viewBox="0 0 395 357" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0_2490_350" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="14" width="386" height="342">
+              <path d="M124.527 57.7765L1.21875 120.161L1.21875 355.247H386.574V14.6855L251.063 77.6906L124.527 57.7765Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_2490_350)">
+              <rect x="-384.906" y="-159.045" width="1298.59" height="912.793" fill="#F6B000"/>
+              <rect x="-484.906" y="-9.045" width="1298.59" height="912.793" fill="url(#pattern0_2490_350)"/>
+            </g>
+              <mask id="mask1_2490_350" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="1" width="387" height="345">
+              <path d="M131.171 44.3117L7.86328 106.696L7.86328 345.662H393.218V1.2207L257.707 64.2257L131.171 44.3117Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask1_2490_350)">
+              <rect x="-274.781" y="-36.8105" width="870" height="580" fill="url(#pattern1_2490_350)"/>
+            </g>
+            <defs>
+              <pattern id="pattern0_2490_350" patternContentUnits="objectBoundingBox" width="0.355407" height="0.505624">
+              <use xlink:href="#image0_2490_350" transform="scale(0.000347077 0.000493773)"/>
+              </pattern>
+              <pattern id="pattern1_2490_350" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image1_2490_350" transform="scale(0.000244141 0.000366211)"/>
+              </pattern>
+              <image class="p-home-interview__img-mask" id="image0_2490_350" width="950" height="850" style="transform-origin: 340px 340px;" preserveAspectRatio="none" xlink:href="/recruit/assets/images/home-interview-02.webp"/>
+            </defs>
+          </svg>
+            <img class="p-home-interview__img-bg p-home-interview__img-bg--02" src="/recruit/assets/images/home-interview-bg-02.webp" alt="">
+          </div>
+          <div class="p-home-interview__content">
+            <hgroup class="p-home-interview__title">
+              <p class="p-home-interview__title--sm">INTERVIEW 02</p>
+              <h3 class="p-home-interview__title--md">
+                人を大切にする会社だから<br aria-hidden="true">
+                安心して<br aria-hidden="true">
+                長く働けると思う。
+              </h3>
+            </hgroup>
+            <p class="p-home-interview__status">生産管理部　<span class="p-home-interview__status--name">K.K.</span>（2023年入社）
+              <span class="p-home-interview__status-arrow" aria-hidden="true">
+                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.29189 9.9416L10.6832 5.83181H0V4.8365H10.6832L6.29189 0.725063L6.97312 0L12.6667 5.33416L6.97312 10.6667L6.29189 9.9416Z" fill="#00A44D"/>
+                </svg>
+              </span>
+            </p>
+            </div>
+         </a>
+      </article>
+      <article class="p-home-interview__img-item" data-hover>
+        <a class="p-home-interview__img-item-link" href="/recruit/interview/member03/">
+          <div class="p-home-interview__img-item-svg">
+          <svg width="388" height="369" viewBox="0 0 388 369" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0_2478_250" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="386" height="367">
+          <path d="M386.291 289.271L194.09 366.775V367.046L193.755 366.91L193.42 367.046V366.775L1.21875 289.271V1.2207L193.755 78.8584L386.291 1.2207V289.271Z" fill="white"/>
+          </mask>
+          <g mask="url(#mask0_2478_250)">
+          <rect x="-0.863281" y="-34.1816" width="90.0349" height="428.307" fill="#ADDBEA"/>
+          <rect x="-5.71094" y="-8.4707" width="429.692" height="429.701" fill="url(#pattern0_2478_250)"/>
+          <rect x="-201.711" y="-0.810547" width="768.543" height="513" fill="url(#pattern1_2478_250)"/>
+          </g>
+          <defs>
+          <pattern id="pattern0_2478_250" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_2478_250" transform="scale(0.00147062)"/>
+          </pattern>
+          <pattern id="pattern1_2478_250" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image1_2478_250" transform="matrix(0.000244415 0 0 0.000366166 -0.000561563 0)"/>
+          </pattern>
+          <image class="p-home-interview__img-mask" id="image0_2478_250" width="640" height="640" style="transform-origin: 320px 320px;" preserveAspectRatio="none" xlink:href="/recruit/assets/images/home-interview-03.webp"/>
+          </defs>
+          </svg>
+      <img class="p-home-interview__img-bg p-home-interview__img-bg--03" src="/recruit/assets/images/home-interview-bg-03.webp" alt="">
+          </div>
+           <div class="p-home-interview__content">
+              <hgroup class="p-home-interview__title">
+              <p class="p-home-interview__title--sm">INTERVIEW 03</p>
+              <h3 class="p-home-interview__title--md">
+                ものづくりの仕事に就き、<br aria-hidden="true">
+                成長を実感している<br aria-hidden="true">
+                毎日です。
+              </h3>
+            </hgroup>
+              <p class="p-home-interview__status">
+              製造部・宇都宮勤務　<span class="p-home-interview__status--name">U.R.</span>（2020年入社）
+              <span class="p-home-interview__status-arrow" aria-hidden="true">
+                <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.29189 9.9416L10.6832 5.83181H0V4.8365H10.6832L6.29189 0.725063L6.97312 0L12.6667 5.33416L6.97312 10.6667L6.29189 9.9416Z" fill="#00A44D"/>
+                </svg>
+              </span>
+              </p>
+          </div>
+        </a>
+      </article>
+      </div>
+      <div class="p-home-vision__btn">
+          <a href="/recruit/interview/" class="c-button" bg-color="cl-blue">
+        <div class="c-button__bg"></div>
+        <div class="c-button__bark">
+          <p>社員インタビュー​<svg><use href="#svg-arrow" /></svg></p>
+        </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="p-home-institution">
+      <div class="c-wrapper">
+        <div class="p-home-institution__item-wrapper">
+          <div class="p-home-institution__item p-home-institution__item--orange">
+            <div class="p-home-institution__item-body">
+             <div class="c-decorate-noise-type02"></div>
+              <div class="p-home-institution__item-inner">
+                <hgroup class="p-home-institution__heading" data-color="cl-orange">
+                    <p class="p-home-institution__heading--en">
+                      <span class="">INSTITUTION</span>
+                    </p>
+                    <h2 class="p-home-institution__heading--ja" data-color="cl-dark">
+                    教育制度・福利厚生
+                    </h2>
+                </hgroup>
+                <h3 class="p-home-institution__title">
+                  成長を支え、人生を支える
+                </h3>
+                <p class="p-home-institution__txt">
+                  面談や学びの制度で成長を後押しし、福利厚生で生活を支える。<br aria-hidden="true">
+                  廣野は、人を大切にする仕組みを本気で整えています。
+                </p>
+                <div class="">
+                  <a href="/recruit/welfare/" class="c-button" bg-color="cl-red">
+                    <div class="c-button__bg"></div>
+                    <div class="c-button__bark">
+                      <p>教育制度・福利厚生​<svg><use href="#svg-arrow" /></svg></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-home-institution__item-bg"></div>
+          </div>
+           <div class="p-home-institution__item p-home-institution__item--yellow">
+            <div class="p-home-institution__item-body">
+              <div class="c-decorate-noise-type02"></div>
+              <div class="p-home-institution__item-inner">
+                <hgroup class="p-home-institution__heading" data-color="cl-orange">
+                    <p class="p-home-institution__heading--en">
+                      <span class="">facility</span>
+                    </p>
+                    <h2 class="p-home-institution__heading--ja" data-color="cl-dark">
+                    働く環境
+                    </h2>
+                </hgroup>
+                <h3 class="p-home-institution__title">
+                  働きやすさも、技術力の一部
+                </h3>
+                <p class="p-home-institution__txt">
+                  最先端の設備で技術を磨き、快適な職場環境で人が育つ。<br aria-hidden="true">
+廣野のものづくりは、設備と環境の両方から支えられています。
+                </p>
+                <div class="">
+                  <a href="/recruit/facilities/" class="c-button" bg-color="cl-orange">
+                    <div class="c-button__bg"></div>
+                    <div class="c-button__bark">
+                      <p>働く環境​<svg><use href="#svg-arrow" /></svg></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <div class="p-home-institution__item-bg"></div>
+          </div>
+          <div class="p-home-institution__item p-home-institution__item--blue">
+            <div class="p-home-institution__item-body">
+              <div class="c-decorate-noise-type02"></div>
+              <div class="p-home-institution__item-inner">
+                <div class="p-home-institution__item-content-wrap">
+                  <div class="p-home-institution__item-content">
+                    <hgroup class="p-home-institution__heading" data-color="cl-orange">
+                        <p class="p-home-institution__heading--en">
+                          <span class="">contribution</span>
+                        </p>
+                        <h2 class="p-home-institution__heading--ja" data-color="cl-dark">
+                        地域貢献
+                        </h2>
+                    </hgroup>
+                    <h3 class="p-home-institution__title">
+                     地域と歩む、ものづくり企業
+                    </h3>
+                    <p class="p-home-institution__txt">
+                      つくっているのは金属部品だけではありません。<br aria-hidden="true">
+地域とのつながりも育てるのが廣野のものづくり。<br aria-hidden="true">
+感謝と誇りを胸に、地元と共に未来を築いています。
+                    </p>
+                    <div class="">
+                      <a href="/recruit/contribution/" class="c-button" bg-color="cl-green">
+                        <div class="c-button__bg"></div>
+                        <div class="c-button__bark">
+                          <p>地域貢献​<svg><use href="#svg-arrow" /></svg></p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p-home-institution__item-content-img">
+                    <img src="/recruit/assets/images/home-institution-item-blue.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-home-institution__item-bg"></div>
+         </div>
+        </div>
+      </div>
+       <div class="p-home-institution__img-item p-home-institution__img-item--01">
+        <img class="" src="/recruit/assets/images/home-institution-img-item-01.webp" alt="">
+      </div>
+       <div class="p-home-institution__img-item p-home-institution__img-item--02">
+        <img class="" src="/recruit/assets/images/home-institution-img-item-02.webp" alt="">
+      </div>
+       <div class="p-home-institution__img-item p-home-institution__img-item--03">
+        <img class="" src="/recruit/assets/images/home-institution-img-item-03.webp" alt="">
+      </div>
+       <div class="p-home-institution__img-item p-home-institution__img-item--04">
+        <img class="" src="/recruit/assets/images/home-institution-img-item-04.webp" alt="">
+      </div>
+       <div class="p-home-institution__img-item p-home-institution__img-item--05 ">
+        <img class="" src="/recruit/assets/images/home-institution-img-item-05.webp" alt="">
+      </div>
+    </section>
+  </div>
+</main>
+  <footer class="js-footer l-footer">
+    <nav class="l-footer-inner" aria-label="フッターナビゲーション">
+      <a href="/recruit/requirements/" class="l-footer__cta">
+        <div class="l-footer__cta-inner">
+          <p class="l-footer-cta__en">ENTRY</p>
+          <p class="l-footer-cta__copy">
+            「人を大切にする」文化の中で、自分も育っていく。<br class="u-wbr pc" aria-hidden="true">
+ そんな場所で、新しい一歩を踏み出しませんか。<br class="u-wbr pc" aria-hidden="true">
+新卒も中途も、想いのある人を待っています。
+          </p>
+          <span class="c-box --big l-footer-cta__copy-box" arrow-color="cl-dark"><svg><use href="#svg-arrow" /></svg><svg><use href="#svg-arrow" /></svg></span>
+        </div>
+      </a>
+      <div class="l-footer__main">
+        <div class="l-footer__main-inner">
+          <div class="l-footer-information">
+            <a href="/recruit/" class="l-footer-logo"><img src="/recruit/assets/images/c-logo-white.webp" alt="廣野鐵工所"></a>
+            <a rel="noopener noreferrer" href="https://hirono-iwc.co.jp/" target="_blank" class="l-footer-external">コーポレートサイト<svg><use href="#svg-arrow" /></svg></a>
+          </div>
+          <div class="l-footer-nav">
+            <ul>
+              <li><a href="/recruit/">トップページ</a></li>
+              <li><a href="/recruit/strengths/">廣野鐵工所の強み</a></li>
+              <li><a href="/recruit/business/">職種紹介・製造工程</a></li>
+              <li><a href="/recruit/crosstalk/">未来を語るクロストーク</a></li>
+              <li><a href="/recruit/interview/">働く人の声を聞く</a></li>
+              <li><a href="/recruit/welfare/">教育制度・福利厚生</a></li>
+              <li><a href="/recruit/facilities/">働く環境</a></li>
+              <li><a href="/recruit/contribution/">地域貢献</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-footer-copyright" ><small translate="no">COPYRIGHT (C) HIRONO IRON WORKS CO.,LTD. ALL RIGHTS RESERVED</small></div>
+      </div>
+    </nav>
+  </footer>
+  <svg style="display: none;">
+    <!-- 矢印 -->
+    <symbol id="svg-arrow" viewBox="0 0 22 18">
+      <path d="M10.928 16.7765L18.555 9.84119H0V8.16159H18.555L10.928 1.22354L12.1112 0L22 9.00139L12.1112 18L10.928 16.7765Z"/>
+    </symbol>
+  </svg>
+</body>
+</html>

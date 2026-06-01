@@ -56,7 +56,7 @@ function NewsRow({ r, accent }: { r: Row; accent: string }) {
       }}>
         <span style={{
           fontFamily: FONT,
-          fontSize: 15,
+          fontSize: 18,
           fontWeight: 400,
           color: '#9ca3af',
           letterSpacing: '0.04em',
@@ -89,7 +89,7 @@ function NewsRow({ r, accent }: { r: Row; accent: string }) {
       <span style={{ flex: 1 }}>
         <span style={{
           fontFamily: FONT,
-          fontSize: 16,
+          fontSize: 20,
           fontWeight: hovered ? 500 : 400,
           lineHeight: 1.55,
           color: hovered ? accent : '#1e293b',
@@ -117,7 +117,7 @@ function SeeAllButton() {
       onMouseLeave={() => setHovered(false)}
       style={{
         fontFamily: FONT,
-        fontSize: 15,
+        fontSize: 18,
         fontWeight: 400,
         color: '#0b1f3a',
         textDecoration: 'none',

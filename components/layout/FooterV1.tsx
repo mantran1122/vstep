@@ -103,9 +103,9 @@ export default function Footer() {
         </a>
       </div>
 
-        <div className="mx-auto w-full max-w-[1440px] border-t border-[#0B1A3B]/30 mt-12" />
+        <div className="mx-auto w-full max-w-[1440px] border-t border-[#0B1A3B]/30 mt-12 px-4 sm:px-6" />
 
-        <div className="mx-auto w-full max-w-[1440px] py-10 sm:py-12 lg:py-14">
+        <div className="mx-auto w-full max-w-[1440px] py-10 sm:py-12 lg:py-14 px-4 sm:px-6">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr] lg:gap-10">
             {/* Logo - chỉ hiện trên desktop */}
             <div className="lg:col-span-1 hidden lg:flex lg:items-center">
@@ -114,11 +114,6 @@ export default function Footer() {
                   src="/img/logo_don.png"
                   alt="Logo Đại học Nam Cần Thơ"
                   className="hidden h-16 w-auto object-contain lg:block lg:h-[7.5rem]"
-                />
-                <img
-                  src="/img/logo_don.png"
-                  alt="Logo Đại học Nam Cần Thơ"
-                  className="h-16 w-auto object-contain sm:h-20 lg:hidden"
                 />
               </Link>
             </div>

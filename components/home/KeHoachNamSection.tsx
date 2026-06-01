@@ -12,7 +12,7 @@ const CARDS = [
     year: '2026',
     title: 'Kế hoạch ôn đánh giá năng lực Ngoại ngữ 6 Bậc năm 2026',
     category: 'Đánh giá năng lực · ĐHNCTU',
-    image: '/img/ke-hoach-nam.png',
+    image: '/img/ke-hoach-nam2.png',
     href: '#',
   },
   {
@@ -22,7 +22,7 @@ const CARDS = [
     year: '2026',
     title: 'Kế hoạch thi VSTEP năm 2026',
     category: 'Chứng chỉ VSTEP · Bậc 1–6',
-    image: '/img/ke-hoach-nam.png',
+    image: '/img/ke-hoach-nam2.png',
     href: '#',
   },
   {
@@ -32,7 +32,7 @@ const CARDS = [
     year: '2025',
     title: 'Kế hoạch ôn đánh giá năng lực Ngoại ngữ 6 Bậc năm 2025',
     category: 'Đánh giá năng lực · ĐHNCTU',
-    image: '/img/ke-hoach-nam.png',
+    image: '/img/ke-hoach-nam2.png',
     href: '#',
   },
   {
@@ -42,7 +42,7 @@ const CARDS = [
     year: '2025',
     title: 'Kế hoạch thi VSTEP năm 2025',
     category: 'Chứng chỉ VSTEP · Bậc 1–6',
-    image: '/img/ke-hoach-nam.png',
+    image: '/img/ke-hoach-nam2.png',
     href: '#',
   },
 ]
@@ -265,14 +265,14 @@ export default function KeHoachNamSection() {
               fontFamily: FONT,
               fontSize: 13,
               fontWeight: 600,
-              color: '#111',
+              color: '#fff',
               textDecoration: 'none',
               letterSpacing: '0.04em',
-              border: '1.5px solid #111',
+              border: 'none',
               borderRadius: 9999,
               padding: '10px 28px',
-              background: 'transparent',
-              transition: 'background 0.25s ease, color 0.25s ease',
+              background: '#FF282E',
+              transition: 'filter 0.5s ease, transform 0.5s ease',
             }}
           >
             Xem tất cả
@@ -291,8 +291,8 @@ export default function KeHoachNamSection() {
           .kehoach-grid { grid-template-columns: 1fr !important; }
         }
         .kehoach-cta:hover {
-          background: #111 !important;
-          color: #fff !important;
+          filter: brightness(0.93);
+          transform: scale(1.01);
         }
         .kehoach-cta:hover .kehoach-cta-arrow {
           transform: translateX(4px);

@@ -10,20 +10,26 @@ type NavItem = { en: string; vi: string; href?: string; children?: NavChild[] }
 const navItems: NavItem[] = [
   { en: 'HOME',      vi: 'Trang chủ',            href: '/' },
   { en: 'ABOUT',     vi: 'Giới thiệu', href: '/gioithieu' },
-  {
-    en: 'DOCUMENTS', vi: 'Văn bản',
-    children: [
-      { vi: 'Văn bản - Biểu mẫu', href: '/vanban/bieu-mau' },
-      { vi: 'Văn bản pháp quy',   href: '/vanban/phap-quy' },
-    ],
-  },
-  { en: 'LOOKUP',    vi: 'Tra cứu kết quả',  href: '/tracuu' },
-  {
+    {
     en: 'INFO', vi: 'Thông tin',
     children: [
       { vi: 'Lịch thi',      href: '/thongtin/lich-thi' },
       { vi: 'Lịch ôn',       href: '/thongtin/lich-on' },
       { vi: 'Kế hoạch năm',  href: '/thongtin/ke-hoach-nam' },
+    ],
+  },
+  {
+    en: 'LOOKUP', vi: 'Tra cứu',
+    children: [
+      { vi: 'Tra cứu kết quả thi',     href: 'https://ttcdr.nctu.edu.vn/kqthi' },
+      { vi: 'Tra cứu thông tin thí sinh', href: 'https://ttcdr.nctu.edu.vn/thisinh' },
+    ],
+  },
+  {
+    en: 'DOCUMENTS', vi: 'Văn bản',
+    children: [
+      { vi: 'Văn bản - Biểu mẫu', href: '/vanban/bieu-mau' },
+      { vi: 'Văn bản pháp quy',   href: '/vanban/phap-quy' },
     ],
   },
   { en: 'CONTACT',   vi: 'Liên hệ',    href: '/lienhe' },

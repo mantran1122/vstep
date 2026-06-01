@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { Interview } from "@/data/interviews";
+import type { Interview } from "./interviews";
 
 export default function InterviewCard({ item, i }: { item: Interview; i: number }) {
   return (

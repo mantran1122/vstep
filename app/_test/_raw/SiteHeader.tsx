@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { navLinks } from "@/data/interviews";
+import { navLinks } from "./interviews";
 
 export default function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);

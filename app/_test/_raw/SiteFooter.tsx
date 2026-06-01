@@ -1,5 +1,5 @@
 // components/SiteFooter.tsx
-import { navLinks } from "@/data/interviews";
+import { navLinks } from "./interviews";
 
 export default function SiteFooter() {
   return (

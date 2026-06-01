@@ -3,7 +3,7 @@
 
 import Reveal from "./Reveal";
 import InterviewCard from "./InterviewCard";
-import { interviews } from "@/data/interviews";
+import { interviews } from "./interviews";
 
 export default function MembersSection() {
   return (

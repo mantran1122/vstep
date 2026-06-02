@@ -15,20 +15,29 @@ export default function ThongTinHero({
   image = '/home/99406120-273c-4a77-99b6-99635e32abd9.png',
 }: Props) {
   return (
-    <section className="relative h-[72vh] min-h-[500px] overflow-hidden">
+    <section className="relative h-[60vh] min-h-[380px] sm:h-[72vh] sm:min-h-[500px] overflow-hidden">
+      <Image
+        src="/vanbangphapquy/vstep_mobile.png"
+        alt={title}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center sm:hidden"
+      />
       <Image
         src={image}
         alt={title}
         fill
         priority
-        className="object-cover object-center"
+        sizes="100vw"
+        className="hidden sm:block object-cover object-center"
       />
 
       <div className="absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-t from-black/38 via-black/14 to-transparent" />
 
       <div
         className="absolute inset-0 flex flex-col justify-center px-[6%]"
-        style={{ paddingTop: 'calc(var(--nav-h) + 120px)' }}
+        style={{ paddingTop: 'calc(var(--nav-h) + clamp(40px, 8vw, 120px))' }}
       >
         <h1
           className="gioithieu-main-hero leading-[0.95] tracking-[-0.02em] text-white"
@@ -39,7 +48,7 @@ export default function ThongTinHero({
 
         <nav
           aria-label="Điều hướng"
-          className="mt-6 flex items-center font-[600] gap-2 text-[calc(0.68rem+4px)] tracking-[0.2em] text-white"
+          className="mt-6 flex items-center font-[400] gap-2 text-[calc(0.68rem+4px)] tracking-[0.2em] text-white"
         >
           {crumbs.map((c, i) => (
             <span key={i} className="flex items-center gap-2">

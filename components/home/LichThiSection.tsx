@@ -19,7 +19,8 @@ const ON = [
 
 const ORANGE = '#F35F2A'
 const BLUE   = '#2A6FDB'
-const FONT   = "'Inter', sans-serif"
+const FONT   = "'Momo Trust Sans', sans-serif"
+const HEADING_FONT = "'Inter', sans-serif"
 
 interface Row { date: string; title: string; isNew?: boolean }
 
@@ -116,7 +117,7 @@ function SeeAllButton() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        fontFamily: FONT,
+        fontFamily: HEADING_FONT,
         fontSize: 18,
         fontWeight: 400,
         color: '#0b1f3a',
@@ -216,8 +217,8 @@ export default function LichThiSection() {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <h3 className="lichthi-heading" style={{
                 margin: 0,
-                fontFamily: FONT,
-                fontWeight: 400,
+                fontFamily: HEADING_FONT,
+                fontWeight: 500,
                 letterSpacing: '-0.02em',
                 color: '#0b1f3a',
                 lineHeight: 1.25,
@@ -234,8 +235,8 @@ export default function LichThiSection() {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <h3 className="lichthi-heading" style={{
                 margin: 0,
-                fontFamily: FONT,
-                fontWeight: 400,
+                fontFamily: HEADING_FONT,
+                fontWeight: 500,
                 letterSpacing: '-0.02em',
                 color: '#0b1f3a',
                 lineHeight: 1.25,

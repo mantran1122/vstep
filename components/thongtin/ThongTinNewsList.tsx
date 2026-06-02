@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import SectionWrapper from '@/components/ui/SectionWrapper'
 
-const FONT = "'Inter', sans-serif"
+const FONT = "'Momo Trust Sans', sans-serif"
 
 export interface NewsRow {
   date: string
@@ -28,11 +28,12 @@ function Row({ r, accent }: { r: NewsRow; accent: string }) {
       href={r.href ?? '#'}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="news-row"
       style={{
         display: 'flex',
         alignItems: 'center',
-        gap: 30,
-        padding: '36px 42px',
+        gap: 'clamp(16px, 2.4vw, 30px)',
+        padding: 'clamp(20px, 3vw, 36px) clamp(20px, 3.4vw, 42px)',
         background: '#fff',
         border: '1px solid rgba(0,0,0,0.12)',
         borderRadius: 8,
@@ -44,9 +45,9 @@ function Row({ r, accent }: { r: NewsRow; accent: string }) {
       }}
     >
       {/* Date + badge */}
-      <div style={{
+      <div className="news-row-date" style={{
         flexShrink: 0,
-        width: 165,
+        width: 'clamp(110px, 14vw, 165px)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -55,10 +56,11 @@ function Row({ r, accent }: { r: NewsRow; accent: string }) {
       }}>
         <span style={{
           fontFamily: FONT,
-          fontSize: 24,
+          fontSize: 'clamp(16px, 1.6vw, 24px)',
           fontWeight: 500,
           color: '#0b1f3a',
           letterSpacing: '0.02em',
+          textAlign: 'center',
         }}>{r.date}</span>
         {r.tag && (
           <span style={{
@@ -87,7 +89,7 @@ function Row({ r, accent }: { r: NewsRow; accent: string }) {
       <span style={{
         flex: 1,
         fontFamily: FONT,
-        fontSize: 22,
+        fontSize: 'clamp(15px, 1.5vw, 22px)',
         fontWeight: 500,
         lineHeight: 1.5,
         color: hovered ? accent : '#0b1f3a',
@@ -121,28 +123,48 @@ export default function ThongTinNewsList({
   const visibleRows = rows.slice(start, start + pageSize)
 
   return (
-    <section className="relative z-10" style={{ padding: '120px 0 24px' }}>
+    <section className="relative z-10" style={{ padding: 'clamp(56px, 9vw, 120px) 0 24px' }}>
       <style>{`
         .news-grid {
           display: grid;
           grid-template-columns: 1fr 2.4fr;
-          gap: 64px;
+          grid-template-rows: auto 1fr;
+          grid-template-areas:
+            "heading rows"
+            "pager   rows";
+          column-gap: 64px;
+          row-gap: 40px;
           align-items: start;
         }
-        .news-left { position: sticky; top: 120px; padding-top: 24px; }
+        .news-heading { grid-area: heading; padding-top: 24px; }
+        .news-rows    { grid-area: rows; display: flex; flex-direction: column; gap: 16px; }
+        .news-pager   { grid-area: pager; align-self: start; }
         @media (max-width: 900px) {
-          .news-grid { grid-template-columns: 1fr; gap: 32px; }
-          .news-left { position: static; }
+          .news-grid {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+              "heading"
+              "rows"
+              "pager";
+            row-gap: 32px;
+          }
+          .news-heading,
+          .news-pager { position: static; padding-top: 0; }
+          .news-pager { display: flex; justify-content: center; }
+        }
+        @media (max-width: 480px) {
+          .news-row { flex-wrap: wrap; }
+          .news-row > div[aria-hidden] { display: none; }
         }
       `}</style>
       <SectionWrapper>
         <div className="news-grid">
-          {/* Cột trái */}
-          <div className="news-left">
+          {/* Heading (cột trái trên desktop) */}
+          <div className="news-heading">
             <h2 style={{
               margin: 0,
               fontFamily: FONT,
-              fontSize: 'clamp(3rem, 6vw, 5rem)',
+              fontSize: 'clamp(2.4rem, 5vw, 4rem)',
               fontWeight: 500,
               letterSpacing: '-0.02em',
               color: '#0b1f3a',
@@ -157,9 +179,18 @@ export default function ThongTinNewsList({
                 letterSpacing: '0.04em',
               }}>{subheading}</p>
             )}
+          </div>
 
-            {/* Pagination tabs */}
-            <div style={{ marginTop: 40, display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+          {/* Cột phải: danh sách */}
+          <div className="news-rows">
+            {visibleRows.map((r, i) => (
+              <Row key={start + i} r={r} accent={accent} />
+            ))}
+          </div>
+
+          {/* Pagination tabs (dưới heading trên desktop, dưới cùng trên mobile) */}
+          <div className="news-pager">
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
               <button
                 type="button"
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
@@ -238,13 +269,6 @@ export default function ThongTinNewsList({
                 color: #fff !important;
               }
             `}</style>
-          </div>
-
-          {/* Cột phải */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {visibleRows.map((r, i) => (
-              <Row key={start + i} r={r} accent={accent} />
-            ))}
           </div>
         </div>
       </SectionWrapper>

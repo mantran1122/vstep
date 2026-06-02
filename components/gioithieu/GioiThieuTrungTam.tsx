@@ -144,7 +144,7 @@ export default function GioiThieuTrungTam() {
           <div className="lg:col-start-1 lg:row-start-2">
             <div className="border-t border-[#111]/10 pt-10 lg:border-t-0 lg:pt-0">
               <div data-gt-reveal="text">
-                <h2 className="gioithieu-main-title whitespace-nowrap font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-6">
+                <h2 className="gioithieu-main-title font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-6 lg:whitespace-nowrap">
                   Chứng chỉ VSTEP cần cho ai?
                 </h2>
               </div>

@@ -130,10 +130,10 @@ export default function GioiThieu4KyNang() {
             data-gtdq-text-card
             className="w-full min-w-0 rounded-2xl border border-[#e4ddd0] bg-white lg:flex-1"
             style={{
-              paddingTop: '56px',
-              paddingBottom: '56px',
-              paddingLeft: '48px',
-              paddingRight: '136px',
+              paddingTop: 'clamp(32px, 5vw, 56px)',
+              paddingBottom: 'clamp(32px, 5vw, 56px)',
+              paddingLeft: 'clamp(20px, 3vw, 48px)',
+              paddingRight: 'clamp(20px, 9vw, 136px)',
             }}
           >
             <div className="mb-10">
@@ -141,9 +141,7 @@ export default function GioiThieu4KyNang() {
                 className="gioithieu-main-title leading-[1.14] tracking-[-0.03em] text-[#111]"
                 style={{ marginBottom: '1rem' }}
               >
-                Bảng quy đổi điểm
-                <br />
-                bài thi VSTEP bậc 3–5
+                Bảng quy đổi điểm bài thi VSTEP bậc 3–5
               </h2>
             </div>
 

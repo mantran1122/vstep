@@ -266,7 +266,7 @@ export default function GioiThieuLoiIch() {
           --ink: #111;
           --sans: 'Momo Trust Sans', system-ui, sans-serif;
           --mono: ui-monospace, 'JetBrains Mono', monospace;
-          padding: 80px 0 0;
+          padding: 80px 0 24px;
           font-family: var(--sans);
         }
         .gtl-wrap { max-width: 1440px; margin: 0 auto; padding: 0 24px; }

@@ -2,7 +2,8 @@
 
 import SectionWrapper from '@/components/ui/SectionWrapper'
 
-const FONT = "'Inter', sans-serif"
+const FONT = "'Momo Trust Sans', sans-serif"
+const HEADING_FONT = "'Inter', sans-serif"
 
 const CARDS = [
   {
@@ -68,7 +69,7 @@ function Card({ card, index }: { card: typeof CARDS[0]; index: number }) {
       }}
     >
       {/* Ảnh 4:5 */}
-      <div style={{ position: 'relative', aspectRatio: '4 / 5', overflow: 'hidden' }}>
+      <div className="kehoach-media" style={{ position: 'relative', aspectRatio: '4 / 5', overflow: 'hidden' }}>
         <img
           src={card.image}
           alt={card.title}
@@ -139,8 +140,8 @@ function Card({ card, index }: { card: typeof CARDS[0]; index: number }) {
       </div>
 
       {/* Nội dung */}
-      <div style={{ padding: '20px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <span style={{
+      <div className="kehoach-content" style={{ padding: '20px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+        <span className="kehoach-date" style={{
           fontFamily: FONT,
           fontSize: 16,
           letterSpacing: '0.02em',
@@ -149,7 +150,7 @@ function Card({ card, index }: { card: typeof CARDS[0]; index: number }) {
           {card.date}
         </span>
 
-        <p style={{
+        <p className="kehoach-title" style={{
           margin: '12px 0 0',
           fontFamily: FONT,
           fontSize: 18,
@@ -165,7 +166,7 @@ function Card({ card, index }: { card: typeof CARDS[0]; index: number }) {
           "{card.title}"
         </p>
 
-        <div style={{
+        <div className="kehoach-footer" style={{
           marginTop: 24,
           paddingTop: 16,
           borderTop: '1px solid rgba(0,0,0,0.1)',
@@ -231,7 +232,7 @@ export default function KeHoachNamSection() {
         {/* Header — bố cục MembersSection */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: 48, gap: 0 }}>
           <h2 style={{
-            fontFamily: FONT,
+            fontFamily: HEADING_FONT,
             fontSize: 'clamp(2.4rem,5vw,4rem)',
             fontWeight: 400,
             letterSpacing: '-0.02em',
@@ -258,11 +259,11 @@ export default function KeHoachNamSection() {
         {/* Xem tất cả */}
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 40 }}>
           <a
-            href="#"
+            href="/thongtin/ke-hoach-nam"
             className="kehoach-cta"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
-              fontFamily: FONT,
+              fontFamily: HEADING_FONT,
               fontSize: 13,
               fontWeight: 600,
               color: '#fff',
@@ -288,7 +289,50 @@ export default function KeHoachNamSection() {
           .kehoach-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }
         @media (max-width: 600px) {
-          .kehoach-grid { grid-template-columns: 1fr !important; }
+          .kehoach-grid {
+            grid-template-columns: 1fr !important;
+            gap: 14px !important;
+          }
+          .kehoach-card {
+            flex-direction: row !important;
+            border-radius: 16px !important;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06) !important;
+          }
+          .kehoach-media {
+            aspect-ratio: auto !important;
+            width: 40% !important;
+            flex-shrink: 0 !important;
+            min-height: 100%;
+          }
+          .kehoach-content {
+            padding: 12px 14px 14px !important;
+            flex: 1 !important;
+            min-width: 0 !important;
+          }
+          .kehoach-title {
+            font-size: 14px !important;
+            line-height: 1.4 !important;
+            margin: 6px 0 0 !important;
+            -webkit-line-clamp: 3 !important;
+          }
+          .kehoach-footer {
+            margin-top: 10px !important;
+            padding-top: 8px !important;
+          }
+          .kehoach-category {
+            font-size: 11px !important;
+          }
+          .kehoach-arrow {
+            width: 28px !important;
+            height: 28px !important;
+            font-size: 13px !important;
+            flex-shrink: 0;
+          }
+          .kehoach-date {
+            font-size: 12px !important;
+            letter-spacing: 0.06em !important;
+            color: rgba(0,0,0,0.55) !important;
+          }
         }
         .kehoach-cta:hover {
           filter: brightness(0.93);

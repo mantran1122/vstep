@@ -2,7 +2,7 @@
 
 import SectionWrapper from '@/components/ui/SectionWrapper'
 
-const FONT = "'Inter', sans-serif"
+const FONT = "'Momo Trust Sans', sans-serif"
 
 export interface ThongTinCard {
   index: number
@@ -150,7 +150,7 @@ function Card({ card, index }: { card: ThongTinCard; index: number }) {
 
 export default function ThongTinListSection({ heading, cards, showSeeAll = false, seeAllHref = '#' }: Props) {
   return (
-    <section className="relative z-10" style={{ padding: '96px 0 96px' }}>
+    <section className="relative z-10" style={{ padding: 'clamp(48px, 8vw, 96px) 0' }}>
       <style>{`
         @keyframes kehoach-rise {
           from { opacity: 0; transform: translateY(30px); }

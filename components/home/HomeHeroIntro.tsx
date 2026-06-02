@@ -14,7 +14,6 @@ export default function HomeHeroIntro() {
     gsap.registerPlugin(ScrollTrigger)
 
     let ctx: ReturnType<typeof gsap.context>
-
     const raf = requestAnimationFrame(() => {
       ctx = gsap.context(() => {
         gsap.fromTo(

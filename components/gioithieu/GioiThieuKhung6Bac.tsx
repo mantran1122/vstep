@@ -167,10 +167,10 @@ export default function GioiThieuKhung6Bac() {
             data-k6b-text-card
             className="w-full min-w-0 rounded-2xl border border-[#e4ddd0] bg-white lg:flex-1"
             style={{
-              paddingTop: '56px',
-              paddingBottom: '56px',
-              paddingRight: '48px',
-              paddingLeft: '136px',
+              paddingTop: 'clamp(32px, 5vw, 56px)',
+              paddingBottom: 'clamp(32px, 5vw, 56px)',
+              paddingRight: 'clamp(20px, 3vw, 48px)',
+              paddingLeft: 'clamp(20px, 9vw, 136px)',
             }}
           >
             <div className="mb-12">
@@ -178,9 +178,7 @@ export default function GioiThieuKhung6Bac() {
                 className="gioithieu-main-title leading-[1.14] tracking-[-0.03em] text-[#111]"
                 style={{ marginBottom: '1rem' }}
               >
-                Khung năng lực
-                <br />
-                6 bậc dùng cho Việt Nam
+                Khung năng lực 6 bậc dùng cho Việt Nam
               </h2>
             </div>
 

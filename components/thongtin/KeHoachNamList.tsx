@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react'
 import SectionWrapper from '@/components/ui/SectionWrapper'
 
-const FONT = "'Inter', sans-serif"
+const FONT = "'Momo Trust Sans', sans-serif"
 
 export interface KeHoachItem {
   date: string // YYYY.MM.DD
@@ -49,17 +49,17 @@ export default function KeHoachNamList({ heading = 'Thông báo', items, pageSiz
   const hasMore = filtered.length > shown
 
   return (
-    <section style={{ padding: '120px 0 24px', background: 'transparent' }}>
+    <section style={{ padding: 'clamp(40px, 6vw, 80px) 0 24px', background: 'transparent' }}>
       <SectionWrapper>
-        <header style={{ marginBottom: 56 }}>
+        <header style={{ marginBottom: 32 }}>
           <h2
             style={{
               fontFamily: FONT,
-              fontSize: 'clamp(2rem, 4.4vw, 3.4rem)',
+              fontSize: 'clamp(2.4rem, 5vw, 4rem)',
               fontWeight: 500,
               letterSpacing: '-0.02em',
               color: '#111',
-              margin: '14px 0 0',
+              margin: 0,
               lineHeight: 1.1,
             }}
           >
@@ -121,15 +121,15 @@ export default function KeHoachNamList({ heading = 'Thông báo', items, pageSiz
                 <div className="khn-body">
                   <div className="khn-meta">
                     <time className="khn-date">{it.date}</time>
-                    <span className="khn-tag">{it.category}</span>
+                    {/* <span className="khn-tag">{it.category}</span> */}
                   </div>
                   <h3 className="khn-title">{it.title}</h3>
-                  <span className="khn-more">
+                  {/* <span className="khn-more">
                     Xem chi tiết
                     <svg width="18" height="12" viewBox="0 0 24 16" fill="none" aria-hidden>
                       <path d="M0 8h22M15 1l7 7-7 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                  </span>
+                  </span> */}
                 </div>
               </a>
             </li>

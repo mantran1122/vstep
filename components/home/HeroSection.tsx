@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 const SLIDES = [
-  { desktop: '/img/1.png', mobile: '/img/1.png' },
-  { desktop: '/img/2.png', mobile: '/img/2.png' },
-  { desktop: '/img/3.png', mobile: '/img/3.png' },
+  { desktop: '/img/1.png', mobile: '/vanbangphapquy/1mobile.png' },
+  { desktop: '/img/2.png', mobile: '/vanbangphapquy/2mobile.png' },
+  { desktop: '/img/3.png', mobile: '/vanbangphapquy/3mobile.png' },
 ]
 const INTERVAL = 10000
 

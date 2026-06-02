@@ -28,7 +28,7 @@
 
 /* ── Heading col ── */
 .vstep-cube-label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   margin-top: 32px;
   max-width: 420px;
   color: #4f5f63;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .vstep-cube-card-top > .vstep-num {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   color: #005c8a;
   padding-top: 3px;
@@ -144,7 +144,7 @@
 
 .vstep-cube-card-top p {
   margin: 0;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 800;
   line-height: 1;
   color: #111;
@@ -153,7 +153,7 @@
 .vstep-cube-card-top small {
   display: block;
   margin-top: 7px;
-  font-size: 12px;
+  font-size: 14px;
   color: #667579;
 }
 
@@ -177,7 +177,7 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.08em;
   color: #005c8a;

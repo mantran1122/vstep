@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
   },
   { en: 'CONTACT',   vi: 'Liên hệ',    href: '/lienhe' },
   { en: 'UNIVERSITY', vi: 'Về trường',              href: 'https://www.nctu.edu.vn/' },
-  { en: 'CENTER',     vi: 'Trung tâm chuẩn đầu ra', href: 'https://ttcdr.nctu.edu.vn/' },
+  { en: 'CENTER',     vi: 'Trung tâm chuẩn đầu ra', href: 'https://ttcdr.nctu.edu.vn/' },
 ]
 
 export default function Navbar() {

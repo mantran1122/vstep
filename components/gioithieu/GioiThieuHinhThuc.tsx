@@ -60,8 +60,8 @@ const SKILLS: Skill[] = [
 ]
 
 /* trạng thái "bay" của panel — đổi 4 dòng này là đổi kiểu bay */
-const DRIFT_FROM = { y: 58, scale: 0.9, opacity: 0, filter: 'blur(16px)', rotationZ: -3 }
-const DRIFT_TO   = { y: -24, scale: 1.02, opacity: 1, filter: 'blur(0px)', rotationZ: 0 }
+const DRIFT_FROM = { yPercent: -42, scale: 0.92, opacity: 0, filter: 'blur(14px)' }
+const DRIFT_TO   = { yPercent: -50, scale: 1, opacity: 1, filter: 'blur(0px)' }
 
 /* ------------------------------------------------------------------ */
 /*  COMPONENT                                                          */
@@ -74,12 +74,6 @@ export default function GioiThieuLoiIch() {
   const cardRefs = useRef<(HTMLElement | null)[]>([])
 
   const [openIdx, setOpenIdx] = useState<number | null>(null)
-  const [pos, setPos] = useState<{ left: number; top: number; width: number; maxHeight: number }>({
-    left: 0,
-    top: 0,
-    width: 0,
-    maxHeight: 0,
-  })
   const closing = useRef(false)
 
   /* ---------- ENTRY: blur-in + counter ---------- */
@@ -108,28 +102,25 @@ export default function GioiThieuLoiIch() {
     return () => { cancelAnimationFrame(raf); ctx?.revert() }
   }, [])
 
-  /* ---------- MỞ: tính vị trí rồi render panel ---------- */
+  /* ---------- MỞ panel ---------- */
   const openDetail = (i: number) => {
     if (openIdx !== null) return
-    const card = cardRefs.current[i]
-    if (!card) return
-    const rect = card.getBoundingClientRect()
-    const viewportWidth = window.innerWidth
-    const viewportHeight = window.innerHeight
-    const edge = 16
-    const gap = 18
-    const width = Math.min(Math.max(308, rect.width + 36), viewportWidth - edge * 2)
-    const maxHeight = Math.min(520, viewportHeight - edge * 2)
-    let left = rect.left + rect.width / 2 - width / 2
-    left = Math.max(edge, Math.min(left, viewportWidth - width - edge))
-    const spaceBelow = viewportHeight - rect.bottom - edge
-    const spaceAbove = rect.top - edge
-    const openBelow = spaceBelow >= 260 || spaceBelow >= spaceAbove
-    let top = openBelow ? rect.bottom + gap : rect.top - maxHeight - gap
-    top = Math.max(edge, Math.min(top, viewportHeight - maxHeight - edge))
-    setPos({ left, top, width, maxHeight })
     setOpenIdx(i)
   }
+
+  /* ---------- Khóa scroll trang khi panel mở ---------- */
+  useEffect(() => {
+    if (openIdx === null) return
+    const scrollBarComp = window.innerWidth - document.documentElement.clientWidth
+    const prevOverflow = document.body.style.overflow
+    const prevPadRight = document.body.style.paddingRight
+    document.body.style.overflow = 'hidden'
+    if (scrollBarComp > 0) document.body.style.paddingRight = `${scrollBarComp}px`
+    return () => {
+      document.body.style.overflow = prevOverflow
+      document.body.style.paddingRight = prevPadRight
+    }
+  }, [openIdx])
 
   /* ---------- BAY RA (Drift) khi panel vừa mount ---------- */
   useLayoutEffect(() => {
@@ -213,7 +204,8 @@ export default function GioiThieuLoiIch() {
                 ref={panelRef}
                 className="fly-panel"
                 onClick={(event) => event.stopPropagation()}
-                style={{ left: pos.left, top: pos.top, width: pos.width, maxHeight: pos.maxHeight }}
+                role="dialog"
+                aria-modal="true"
               >
                 <div className="fly-head">
                   <div className="fly-ic"><i className={`bi ${active.icon}`} /></div>
@@ -319,13 +311,17 @@ export default function GioiThieuLoiIch() {
         .vcard-plus { font-size: .95rem; color: #c2bbac; transition: color .3s ease; }
         .vcard:hover .vcard-plus { color: var(--accent); }
 
-        /* ----- panel bay ra ----- */
+        /* ----- panel bay ra (modal căn giữa) ----- */
         .fly-scrim {
           position: fixed; inset: 0; z-index: 1000; cursor: pointer;
-          background: rgba(34,27,12,.34); backdrop-filter: blur(1.5px); -webkit-backdrop-filter: blur(1.5px);
+          background: rgba(20,16,6,.55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
         }
         .fly-panel {
-          position: fixed; z-index: 1001; background: #fff; border: 1px solid var(--border);
+          position: fixed; z-index: 1001;
+          top: 50%; left: 50%; transform: translate(-50%, -50%);
+          width: min(560px, calc(100vw - 32px));
+          max-height: min(80vh, 720px);
+          background: #fff; border: 1px solid var(--border);
           border-radius: 18px; padding: 22px 22px 24px; will-change: transform, opacity; backface-visibility: hidden;
           box-shadow: 0 44px 90px -34px rgba(60,45,15,.62), 0 14px 32px -14px rgba(0,0,0,.28);
           overflow: auto;

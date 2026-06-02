@@ -277,9 +277,6 @@ export default function KeHoachNamSection() {
             }}
           >
             Xem tất cả
-            <svg className="kehoach-cta-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ transition: 'transform 0.25s ease' }}>
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
           </a>
         </div>
       </SectionWrapper>

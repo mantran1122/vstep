@@ -249,7 +249,7 @@ export default function HomeBusinessSection() {
 
                     {/* gradient + title — luôn hiển thị ở dưới ảnh */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />
-                    <p className="absolute bottom-[10px] left-[10px] right-[10px] text-[1rem] font-semibold leading-snug text-white transition-opacity duration-300 group-hover:opacity-0">
+                    <p className="absolute bottom-[10px] left-[10px] right-[10px] text-[1rem] font-[400] leading-snug text-white transition-opacity duration-300 group-hover:opacity-0">
                       {slide.title}
                     </p>
 

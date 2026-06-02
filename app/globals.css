@@ -85,7 +85,7 @@ h1.gioithieu-main-hero,
 }
 
 .nav-brand-text .sub {
-  font-size: 0.62rem;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.45);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ h1.gioithieu-main-hero,
 .nav-links a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: color 0.2s;
@@ -116,7 +116,7 @@ h1.gioithieu-main-hero,
   color: rgba(255, 255, 255, 0.85);
   font-family: 'Momo Trust Sans', sans-serif;
   font-weight: 300;
-  font-size: 0.72rem;
+  font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 9px 22px;
@@ -216,7 +216,7 @@ h1.gioithieu-main-hero,
 }
 
 .eyebrow span {
-  font-size: 0.68rem;
+  font-size: 11px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--accent);
@@ -267,7 +267,7 @@ h1.gioithieu-main-hero,
 }
 
 .counter-total {
-  font-size: 0.7rem;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.25);
   letter-spacing: 0.1em;
 }
@@ -314,7 +314,7 @@ h1.gioithieu-main-hero,
 }
 
 .scroll-indicator span {
-  font-size: 0.58rem;
+  font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.35);
@@ -352,7 +352,7 @@ h1.gioithieu-main-hero,
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.95rem;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -598,7 +598,7 @@ h1.gioithieu-main-hero,
 }
 
 .hero-quick-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: 0.01em;
@@ -607,7 +607,7 @@ h1.gioithieu-main-hero,
 
 .hero-quick-sub {
   display: block;
-  font-size: 0.88rem;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 2px;
   opacity: 0.9;
@@ -729,7 +729,7 @@ h1.gioithieu-main-hero,
 
 /* Intro typography */
 .home-intro-kicker {
-  font-size: 0.78rem;
+  font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #8e7736;
@@ -752,7 +752,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-intro-line {
-  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.85;
   color: #2c2c2c;
@@ -771,9 +771,8 @@ h1.gioithieu-main-hero,
   background: #FF282E;
   color: #fff;
   text-decoration: none;
-  font-size: 0.76rem;
+  font-size: 14px;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
   border: none;
   transition: filter 0.5s ease, transform 0.5s ease;
 }
@@ -825,7 +824,7 @@ h1.gioithieu-main-hero,
 }
 
 .c-heading--en {
-  font-size: 0.92rem;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.22em;
   line-height: 1.05;
@@ -944,7 +943,7 @@ h1.gioithieu-main-hero,
   min-height: 56px;
   padding: 0 28px;
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-decoration: none;
@@ -1009,7 +1008,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-section-eyebrow {
-  font-size: 0.86rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.24em;
   line-height: 1;
@@ -1066,7 +1065,7 @@ h1.gioithieu-main-hero,
   border-radius: 999px;
   border: 1px solid transparent;
   text-decoration: none;
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1117,7 +1116,7 @@ h1.gioithieu-main-hero,
   border-radius: 999px;
   background: #fffdf8;
   color: #161616;
-  font-size: 0.72rem;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1270,7 +1269,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-interview-card-index {
-  font-size: 0.72rem;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
   color: #8fe7d0;
@@ -1286,7 +1285,7 @@ h1.gioithieu-main-hero,
 
 .home-interview-card-meta {
   color: rgba(255, 253, 248, 0.72);
-  font-size: 0.82rem;
+  font-size: 14px;
 }
 
 .home-interview-card:hover .home-interview-card-overlay {
@@ -1410,7 +1409,7 @@ h1.gioithieu-main-hero,
   }
 
   .hero-quick-title {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hero-quick-sub {
@@ -1436,7 +1435,7 @@ h1.gioithieu-main-hero,
   }
 
   .home-intro-line {
-    font-size: clamp(1rem, 4.5vw, 1.3rem);
+    font-size: 18px;
     line-height: 1.9;
   }
 }
@@ -1459,7 +1458,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-label {
-  font-size: 0.68rem;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -1477,7 +1476,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-desc {
-  font-size: 0.92rem;
+  font-size: 16px;
   line-height: 1.95;
   color: rgba(255, 253, 248, 0.48);
   max-width: 44ch;
@@ -1522,7 +1521,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-nav-num {
-  font-size: 0.7rem;
+  font-size: 11px;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.12em;
@@ -1537,7 +1536,7 @@ h1.gioithieu-main-hero,
 
 .home-service-nav-name {
   display: block;
-  font-size: 0.97rem;
+  font-size: 16px;
   font-weight: 600;
   color: #fffdf8;
   letter-spacing: 0.02em;
@@ -1546,7 +1545,7 @@ h1.gioithieu-main-hero,
 
 .home-service-nav-sub {
   display: block;
-  font-size: 0.78rem;
+  font-size: 14px;
   color: rgba(255, 253, 248, 0.38);
   margin-top: 3px;
 }
@@ -1556,7 +1555,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-nav-arrow {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: rgba(255, 253, 248, 0.22);
   transition: transform 0.25s ease, color 0.25s ease;
   flex-shrink: 0;
@@ -1646,7 +1645,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-card-num {
-  font-size: 0.68rem;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.32em;
   color: var(--accent);
@@ -1663,7 +1662,7 @@ h1.gioithieu-main-hero,
 }
 
 .home-service-card-desc {
-  font-size: 0.92rem;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.78);
   line-height: 1.65;
   max-width: 38ch;
@@ -1727,7 +1726,7 @@ h1.gioithieu-main-hero,
   }
 
   .home-service-card-name {
-    font-size: 1.9rem;
+    font-size: 20px;
   }
 }
 
@@ -1813,7 +1812,7 @@ h1.gioithieu-main-hero,
   pointer-events: none;
 }
 .biz-arc-card-title {
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 500;
   color: rgba(255, 250, 235, 0.94);
   line-height: 1.35;
@@ -1837,7 +1836,7 @@ h1.gioithieu-main-hero,
 
 /* số thứ tự dưới thẻ */
 .biz-arc-card-caption {
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #888;
@@ -1927,14 +1926,14 @@ h1.gioithieu-main-hero,
 }
 
 .contact-info-title {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--c-text);
   margin-bottom: 12px;
 }
 
 .contact-info-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--c-muted);
   line-height: 1.6;
@@ -1946,7 +1945,7 @@ h1.gioithieu-main-hero,
 .contact-form-eyebrow {
   color: var(--c-primary);
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1964,7 +1963,7 @@ h1.gioithieu-main-hero,
 
 .contact-form-sub {
   color: var(--c-muted);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .contact-form-card {
@@ -1989,7 +1988,7 @@ h1.gioithieu-main-hero,
 .contact-field { display: flex; flex-direction: column; gap: 6px; }
 
 .contact-field > span {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--c-text);
 }
@@ -1999,7 +1998,7 @@ h1.gioithieu-main-hero,
   border: 1px solid var(--c-border);
   border-radius: 8px;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--c-text);
   background: #fff;
   font-family: inherit;
@@ -2022,7 +2021,7 @@ h1.gioithieu-main-hero,
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--c-muted);
 }
 
@@ -2045,7 +2044,7 @@ h1.gioithieu-main-hero,
   border: none;
   border-radius: 8px;
   padding: 12px 20px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   cursor: pointer;
   transition: background .15s, transform .1s;

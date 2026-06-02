@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const sectionTitleClass = "text-[24px] font-[500] text-[#0B1A3B]";
 
@@ -186,9 +187,9 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat Zalo"
-          className="relative flex h-[55px] w-[55px] items-center justify-center rounded-full bg-[#0068FF] shadow-lg hover:scale-110 transition-transform duration-200"
+          className="relative flex h-[55px] w-[55px] items-center justify-center hover:scale-110 transition-transform duration-200"
         >
-          <i className="bi bi-chat-fill text-[26px] text-white" />
+          <Image src="/home/zaloicon.png" alt="Chat Zalo" width={55} height={55} />
           <span className="absolute -bottom-1 -right-1 rounded-[5px] bg-white px-1 py-0.5 text-[10px] font-[700] leading-none text-[#ff0000] shadow">
             CDR
           </span>

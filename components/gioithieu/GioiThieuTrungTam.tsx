@@ -112,7 +112,7 @@ export default function GioiThieuTrungTam() {
 
             {/* Khối 1: VSTEP là gì? */}
             <div data-gt-reveal="text">
-              <h2 className="gioithieu-main-title leading-[1.1] tracking-[-0.04em] text-[#111]">
+              <h2 className="gioithieu-main-title leading-[1.1] tracking-[-0.04em] text-[#111] [text-wrap:balance]">
                 VSTEP là gì?
               </h2>
               <p className="mt-5 leading-[1.85] text-[#111]/70" style={{ fontSize: 'calc(0.97rem + 4px)' }}>
@@ -128,7 +128,7 @@ export default function GioiThieuTrungTam() {
 
             {/* Khối 2: Chứng chỉ VSTEP là gì? */}
             <div data-gt-reveal="text" className="border-t border-[#111]/10 pt-10">
-              <h2 className="gioithieu-main-title font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-4">
+              <h2 className="gioithieu-main-title font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-4 [text-wrap:balance]">
                 Chứng chỉ VSTEP là gì?
               </h2>
               <p className="leading-[1.85] text-[#111]/70" style={{ fontSize: 'calc(0.97rem + 4px)' }}>
@@ -144,7 +144,7 @@ export default function GioiThieuTrungTam() {
           <div className="lg:col-start-1 lg:row-start-2">
             <div className="border-t border-[#111]/10 pt-10 lg:border-t-0 lg:pt-0">
               <div data-gt-reveal="text">
-                <h2 className="gioithieu-main-title font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-6 lg:whitespace-nowrap">
+                <h2 className="gioithieu-main-title font-light leading-[1.1] tracking-[-0.03em] text-[#111] mb-6 [text-wrap:balance]">
                   Chứng chỉ VSTEP cần cho ai?
                 </h2>
               </div>
